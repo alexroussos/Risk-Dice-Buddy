@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FF7F0000"
+    >
+    <TextView android:text="Single Battle Mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView1"></TextView>
+  <Button
+        android:id="@+id/rolldice"
+        android:padding="10dp"
+        android:layout_margin="4dip" 
+        android:layout_height="wrap_content" 
+        android:background="@drawable/rollbutton" android:layout_width="wrap_content" android:layout_gravity="center"/>
+ <TextView  
+	android:id="@+id/battleoutput"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    />
+
+<TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:shrinkColumns="*	" android:id="@+id/tableLayout1">
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dip">
+        <com.alex.riskroller.DieButton android:background="@drawable/red1" android:id="@+id/dieA1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DieA1" android:layout_weight="1" android:layout_margin="2dip"></com.alex.riskroller.DieButton>
+        <com.alex.riskroller.DieButton android:background="@drawable/red2" android:id="@+id/dieA2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DieA2" android:layout_weight="1" android:layout_margin="2dip"></com.alex.riskroller.DieButton>
+        <com.alex.riskroller.DieButton android:background="@drawable/red3" android:id="@+id/dieA3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DieA3" android:layout_weight="1" android:layout_margin="2dip"></com.alex.riskroller.DieButton>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="true" android:layout_margin="4dip">
+        <com.alex.riskroller.DieButton android:layout_height="wrap_content" android:background="@drawable/white1" android:layout_width="wrap_content" android:id="@+id/dieD1" android:text="Click to Select" android:layout_margin="2dip"></com.alex.riskroller.DieButton>
+        <com.alex.riskroller.DieButton android:layout_height="wrap_content" android:background="@drawable/white2" android:layout_width="wrap_content" android:id="@+id/dieD2" android:text="Tap to Enable" android:layout_margin="2dip"></com.alex.riskroller.DieButton>
+    </TableRow>
+    </TableLayout>
+<Button android:layout_height="wrap_content" android:background="@drawable/multimode" android:id="@+id/multi" android:layout_gravity="center" android:layout_width="wrap_content"></Button>
+
+
+
+</LinearLayout>
